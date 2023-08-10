@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/620f1fb52b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!----HEADER-->
+<div id="header">
+    <div class="container">
+        <nav>
+        <img src="" class="logo">
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Evan</span><br> Griffin</h1>
+        </div>
+    </div>
+</div>
+<!------ABOUT-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Grad_Pic.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I'm a recent gradaute from Texas Tech University.
+                    My main passion lies in front-end development, where I enjoy cerating visaully appealing and user-friendly interfaces.
+                    However, I also throughly enjoy delving into the intricacies of back-end development, unraveling complex systems and algorithms to create robust and efficient software solutions. In addition to my technical pursuits,
+                    fitness is a significant hobby of mine, keeping me energized and focused outside of work.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>C++, C, Python, Java, C#, JavaScript, Unity, SQL, CSS, HTML, ReactJS</li>
+                        <li><span>Front-end developement</span><br>Designing Web interfaces</li>
+                        <li><span>Back-end developement</span><br>Object-oriented programming, API knowledge, database management, problem solving</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Jun - Aug 2021</span><br>Internship at Unitek.AI</li>
+                        <li><span>Jun - Aug 2019</span><br>Internship at Dover Fueling Solutiions</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id= education>
+                    <ul>
+                        <li><span>2019-2023</span><br>B.S. Computer Science, Minor Mathmatetics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---Porfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/Unitek.AI.png">
+                <div class="layer">
+                    <h3>Company Dashboard</h3>
+                    <p>This Dashbaord displays company data</p>
+                    <a href="https://github.com/EvanGriffin21/Dashboard"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Catan.png">
+                <div class="layer">
+                    <h3>Catan Gameboaard</h3>
+                    <p>This is a snippet from the Catan gamebaord that was created</p>
+                    <a href="https://github.com/mmoffitt121/CatanGame"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Elevator.png">
+                <div class="layer">
+                    <h3>Elevator</h3>
+                    <p>This a responsive elevator pannel</p>
+                    <a href="https://github.com/EvanGriffin21/p1.Evan.Griffin"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/fitness.png">
+                <div class="layer">
+                    <h3>Fitness Web App</h3>
+                    <p>This a fitness and nutrition web app that helps users achieve thier fitness goals</p>
+                    <a href="https://github.com/hailley-kane/Capstone_Project"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <!--<a href="#"class="button">See more</a> -->
+    </div>
+</div>
+
+<!------contact-->
+<div id="contact">
+     <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> evangriffin21@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> 512-450-2072</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/evan-griffin-48273a189/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/EvanGriffin21"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/evan_griffin21/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="Images/Resume.pdf" download class="button button2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="button button2">Submit</button>
+                    
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    
+        <div class="copyright">
+            <p>
+                Copyright © EG
+            </p>
+        </div>
+    
+</div>
+
+
+
+<script>
+
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+</script> 
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxSp0yXd22H-pPF44rNxWFrq1TBWZ-xe0Z5jKKI_N_KZ24bvsAJEOCcK6d2f0WMUt3w/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>   
+</body>
+</html>
